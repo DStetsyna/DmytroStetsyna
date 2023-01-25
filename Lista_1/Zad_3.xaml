@@ -1,0 +1,22 @@
+﻿<Window x:Class="Lista_1.Zad_3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lista_1"
+        mc:Ignorable="d"
+        Title="Zad_3" Height="250" Width="250">
+    <Grid>
+        <DockPanel LastChildFill="True" >
+            <Button DockPanel.Dock="Bottom">Bottom</Button>
+            <Button DockPanel.Dock="Left" Width="30">Left</Button>
+            <Button DockPanel.Dock="Right" Width="30" >Right</Button>
+            <Button DockPanel.Dock="Top" Height="50" Background="red" >Top1</Button>
+            <Button DockPanel.Dock="Top" Height="80" Width="80" Background="Green" >Top2</Button>
+            <Button DockPanel.Dock="Right" Height="65" Width="45">right1</Button>
+            <Button DockPanel.Dock="Right" Height="65" Width="45">right2</Button>
+            <Button DockPanel.Dock="Top" Width="110" Height="30" Background="Blue">Top3</Button>
+            <Button>fill</Button>
+        </DockPanel>
+    </Grid>
+</Window>
