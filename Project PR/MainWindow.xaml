@@ -1,0 +1,55 @@
+﻿<Window x:Class="Project_PR.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_PR"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" ResizeMode="CanResize" Width="800">
+
+    <Grid Background="Aquamarine">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid Background="Aquamarine" Grid.Row="1"
+                  AutoGenerateColumns="False"
+                  x:Name="MoviesGrid">
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Width="*" Binding="{Binding Film_id}"/>
+                    <DataGridTextColumn Header="Kategoria" Width="*" Binding="{Binding Category}"/>
+                    <DataGridTextColumn Header="Nazwa" Width="*" Binding="{Binding Film_name}"/>
+                    <DataGridTextColumn Header="Kraj" Width="*" Binding="{Binding Country}"/>
+                    <DataGridTextColumn Header="Rok" Width="*" Binding="{Binding Prod_year}"/>
+                    <DataGridTextColumn Header="Długość" Width="*" Binding="{Binding Film_length}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <StackPanel Grid.Row="2"
+                    HorizontalAlignment="Center"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Center">
+
+                <Button Height="24"
+                    Content="Dodaj"
+                    Width="150" Click="NewELButton_Click"/>
+
+                <Button Height="24"
+                    Margin="10 0"
+                    Content="Edytuj"
+                    Width="150" Click="UpdateButton_Click"/>
+
+            <Button Height="24"
+                    Content="Usuń"
+                    Width="150" Click="Delete_Click"/>
+
+
+            <TextBox x:Name="Txtbid" Margin="10" Width="30"/>
+            <TextBlock Text="ID"/>
+
+        </StackPanel>
+        </Grid>
+</Window>
