@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="Label" x:Key="myLabel">
+        <Setter Property="Content" Value="Wesołych świąt!"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="Cambria"/>
+        <Setter Property="FontSize" Value="45"/>
+        <Setter Property="FontStyle" Value="Italic"/>
+        <Setter Property="FontWeight" Value="Black"/>
+    </Style>
+
+    <BitmapImage x:Key="BackgroundImage" UriSource="resources/image.jpg"/>
+    <ImageBrush x:Key="BackgroundBrush" ImageSource="{StaticResource BackgroundImage}"/>
+
+</ResourceDictionary>
